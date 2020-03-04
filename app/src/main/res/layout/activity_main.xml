@@ -19,7 +19,7 @@
             android:text="충전카드"
             android:layout_width="92dp"
             android:layout_height="112dp"
-            android:id="@+id/button2" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/button2" app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.802"
@@ -30,18 +30,18 @@
             android:layout_width="92dp"
             android:layout_height="112dp"
             android:id="@+id/button" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintBottom_toTopOf="@+id/button3" android:layout_marginTop="200dp"/>
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintBottom_toTopOf="@+id/button3" android:layout_marginTop="200dp"
+            app:layout_constraintEnd_toStartOf="@+id/button2"/>
     <Button
             android:text="주변매장"
             android:layout_width="89dp"
             android:layout_height="121dp"
             android:id="@+id/button3"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.273"
+            app:layout_constraintHorizontal_bias="0.251"
             app:layout_constraintTop_toBottomOf="@+id/button"/>
     <Button
             android:text="테이블       오더"
@@ -59,8 +59,8 @@
             android:id="@+id/textView2" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" android:layout_marginTop="20dp"
-            android:layout_marginBottom="46dp" app:layout_constraintBottom_toTopOf="@+id/imageView2"/>
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"/>
     <Button
             android:text="적립카드"
             android:layout_width="wrap_content"
@@ -97,29 +97,26 @@
             app:layout_constraintStart_toEndOf="@+id/button6" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button8"
     />
+
     <TextView
             android:text="고객님"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView5" tools:ignore="MissingConstraints"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="78dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="35dp"
-            android:layout_marginStart="35dp" android:layout_marginBottom="7dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/textView6" app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            android:layout_marginEnd="13dp" android:layout_marginRight="13dp"/>
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0"/>
     <TextView
             android:text="MORE BERRY GOOD!"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="127dp"
+            android:layout_height="16dp"
             android:id="@+id/textView6" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="108dp" tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2" android:layout_marginEnd="23dp"
-            android:layout_marginRight="23dp" android:layout_marginBottom="23dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.061"/>
-
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintVertical_bias="0.134" app:layout_constraintEnd_toEndOf="parent"/>
     <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content"
                                               android:id="@+id/barrier" app:barrierDirection="top"/>
 
