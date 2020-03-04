@@ -25,7 +25,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), ButtonActivity.class);
                 startActivity(intent);
+
+
+    private void initializeLayout2() {
+        Button b2 = (Button) findViewById(R.id.button2);
+        b2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), Button2Activity.class);
+                startActivity(intent);
             }
         });
+                }
+
+
+
+//        Button b2 = (Button) findViewById(R.id.button2);
+//        b2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), Button2Activity.class);
+//                startActivity(intent);
+            }
+        });
+
+
     }
 }
