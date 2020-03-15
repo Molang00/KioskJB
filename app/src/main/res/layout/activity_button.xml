@@ -6,5 +6,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ButtonActivity">
-
+    <TextView
+            android:text="달콤 크루 소개"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.105"/>
+    <Button
+            android:text="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leftbuttonofintroduction" app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.618"
+            app:layout_constraintVertical_bias="0.086"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

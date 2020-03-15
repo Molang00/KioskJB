@@ -49,29 +49,22 @@ public class Main2Activity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
- //       initializeLayout();
+        initializeLayout();
 
     }
 
-//    private void initializeLayout() {
-//        Button b = (Button) findViewById(R.id.buttondal);
-//        b.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Intent intent = new Intent(getApplicationContext(), ButtonActivity.class);
-//                    startActivity(intent);
-//                }
-//        });
-//
-//        TextView T = (TextView) findViewById(R.id.textViewdal);
-//        T.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Intent intent = new Intent(getApplicationContext(), aroundStore.class);
-//                    startActivity(intent);
-//                }
-//        });
-//    }
+
+    private void initializeLayout() {
+        Button b = (Button) findViewById(R.id.dalcombutton);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
